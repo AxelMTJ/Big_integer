@@ -7,11 +7,14 @@ using namespace std;
  * @param x Generate x random numbers from 1 to 1000 digits.
  */
 void generate_test_file(const uint64_t &x);
-
+/**
+ * @brief You can input your own number(Only read from file is acceptable.)
+ *        I have provided a function: generate_test_file to automaticaly generate the test file.
+ */
 int main()
 {
     //generate_test_file(10);
-    ifstream test("test.txt"); // Read data from file
+    ifstream test("test.txt"); // Read data from file. CHANGE THE NAME OF FILE HERE!
     if (!test.is_open())
     {
         cout << "There is no test.txt. You can generate one by calling generate_test_file()";
